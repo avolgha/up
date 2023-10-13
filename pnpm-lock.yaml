@@ -8,6 +8,12 @@ dependencies:
   '@avolgha/log':
     specifier: ^1.0.5
     version: 1.0.5
+  marked:
+    specifier: ^9.1.1
+    version: 9.1.1
+  minimist:
+    specifier: ^1.2.8
+    version: 1.2.8
 
 devDependencies:
   '@eslint/create-config':
@@ -19,6 +25,9 @@ devDependencies:
   '@rollup/plugin-typescript':
     specifier: ^11.0.0
     version: 11.1.3(rollup@3.29.2)(tslib@2.6.2)(typescript@4.9.5)
+  '@types/minimist':
+    specifier: ^1.2.3
+    version: 1.2.3
   '@types/node':
     specifier: ^20.6.2
     version: 20.6.2
@@ -259,6 +268,10 @@ packages:
 
   /@types/json-schema@7.0.13:
     resolution: {integrity: sha512-RbSSoHliUbnXj3ny0CNFOoxrIDV6SUGyStHsvDqosw6CkdPV8TtWGlfecuK4ToyMEAql6pzNxgCFKanovUzlgQ==}
+    dev: true
+
+  /@types/minimist@1.2.3:
+    resolution: {integrity: sha512-ZYFzrvyWUNhaPomn80dsMNgMeXxNWZBdkuG/hWlUvXvbdUH8ZERNBGXnU87McuGcWDsyzX2aChCv/SVN348k3A==}
     dev: true
 
   /@types/node@20.6.2:
@@ -920,6 +933,12 @@ packages:
       yallist: 4.0.0
     dev: true
 
+  /marked@9.1.1:
+    resolution: {integrity: sha512-ZmXkUGH54U4rEy3GL9vYj8+S1PHJx/zz5pc4Frn7UdGiNREKT12fWBJ5a5ffjFtghx9C9912vEg9Zra1Nf7CnA==}
+    engines: {node: '>= 16'}
+    hasBin: true
+    dev: false
+
   /merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -938,6 +957,10 @@ packages:
     dependencies:
       brace-expansion: 1.1.11
     dev: true
+
+  /minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+    dev: false
 
   /mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}

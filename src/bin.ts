@@ -30,7 +30,7 @@ http.createServer((req, res) => {
 		renderFunction = renderDocument;
 	}
 
-	renderFunction(req, res, pathname);
+	renderFunction(req, res, pathname, opts);
 }).listen(opts.port, "127.0.0.1", undefined, () => {
 	log.info("started server.", { port: opts.port });
 });

@@ -22,7 +22,7 @@ $ pnpm add -D @avolgha/up
 ## Usage
 
 ````shell
-$ up [port]
+$ up [port] [--renderMd]
 ````
 
 > Port will default to `5173` if no other is specified.
