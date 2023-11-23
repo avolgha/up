@@ -11,6 +11,7 @@ Simple web server you can start in milliseconds!
   - [ ] otherwise show Directory Browser
 - [ ] specifiable 404-error page
 - [X] add `renderMarkdown`-function at [src/bin.ts L26](https://github.com/avolgha/up/blob/dev/src/bin.ts#L26)
+- [ ] make GitHub Actions work
 
 ## Installation
 
