@@ -22,6 +22,7 @@
     "@types/node": "^20.6.2",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
+    "auto-changelog": "^2.4.0",
     "eslint": "^8.35.0",
     "rollup": "^3.18.0",
     "tslib": "^2.5.0",
@@ -30,7 +31,8 @@
   "scripts": {
     "bundle": "tsc",
     "watch": "tsc -w",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "changelog": "auto-changelog -r github -u --release-summary"
   },
   "files": [
     "dist"

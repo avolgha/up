@@ -7,6 +7,7 @@ import { parseOpts } from "./parseOpts";
 import { RenderFunction } from "./types";
 import renderDocument from "./renderDocument";
 import renderDirectory from "./renderDirectory";
+import renderMarkdown from "./renderMarkdown";
 
 const opts = parseOpts();
 const dir = process.cwd();
@@ -27,7 +28,13 @@ http.createServer((req, res) => {
 	if (fs.statSync(pathname).isDirectory()) {
 		renderFunction = renderDirectory;
 	} else {
-		renderFunction = renderDocument;
+		const extension = path.extname(pathname).toLowerCase();
+
+		if (opts.renderMarkdown && extension === ".md") {
+			renderFunction = renderMarkdown;
+		} else {
+			renderFunction = renderDocument;
+		}
 	}
 
 	renderFunction(req, res, pathname, opts);
